@@ -51,5 +51,4 @@ public class AuthService {
         repo.flush();
         return user;
     }
-    
 }
