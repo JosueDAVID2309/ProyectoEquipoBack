@@ -9,4 +9,5 @@ import com.bolsasenati.senati.instructor.model.Instructor;
 
 public interface InstructorRepository extends JpaRepository<Instructor, Long>{
     Optional<Instructor> findByCorreoInstitucional(String correoInstitucional);
+    Boolean existsByCorreoPersonal(String correo);
 }

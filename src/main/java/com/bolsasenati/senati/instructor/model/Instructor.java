@@ -33,7 +33,7 @@ public class Instructor {
     private String genero;
 
     @Column(nullable = false, length = 8, unique = true)
-    private String DNI;
+    private String dni;
 
     private String telefono;
 
