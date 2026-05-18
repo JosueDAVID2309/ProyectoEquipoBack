@@ -1,6 +1,6 @@
-package com.senati.bolsa.repository;
+package com.bolsasenati.senati.Dashboard.repository;
 
-import com.senati.bolsa.model.SearchMetric;
+import com.bolsasenati.senati.Dashboard.model.SearchMetric;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
