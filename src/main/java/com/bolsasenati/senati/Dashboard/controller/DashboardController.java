@@ -1,6 +1,6 @@
-package com.senati.bolsa.controller;
+package com.bolsasenati.senati.Dashboard.controller;
 
-import com.senati.bolsa.service.SearchMetricService;
+import com.bolsasenati.senati.Dashboard.service.SearchMetricService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
