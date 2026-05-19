@@ -1,7 +1,7 @@
-package com.bolsasenati.senati.dashboard.service;
+package com.bolsasenati.senati.Dashboard.service;
 
-import com.bolsasenati.senati.dashboard.model.SearchMetric;
-import com.bolsasenati.senati.dashboard.repository.SearchMetricRepository;
+import com.bolsasenati.senati.Dashboard.model.SearchMetric;
+import com.bolsasenati.senati.Dashboard.repository.SearchMetricRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
