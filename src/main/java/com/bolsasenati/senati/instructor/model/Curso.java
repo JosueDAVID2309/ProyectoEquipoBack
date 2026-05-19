@@ -2,11 +2,13 @@ package com.bolsasenati.senati.instructor.model;
 
 import java.util.List;
 
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.Data;
@@ -14,35 +16,23 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+@Data
 @Setter
 @Getter
-@Entity
-@Table(name = "instructor")
-@Data
 @NoArgsConstructor
-public class Instructor {
-
+@Entity
+@Table(name = "curso")
+public class Curso {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String nombre;
-    private String apellido;
-    private String genero;
-    private String dni;
-    private String telefono;
-    private String imageurl;
 
-    @Column(name = "correo_institucional")
-    private String correoInstitucional;
+    @OneToMany(mappedBy = "curso")
+    private List<Horario> horarios;
 
-    private String clave;
-
-    @Column(name = "correo_personal")
-    private String correoPersonal;
-
-    private String especialidad;
-
-    @OneToMany(mappedBy = "instructor")
-    private List<Curso> cursos;
+    @ManyToOne
+    @JoinColumn(name = "instructor_id")
+    private Instructor instructor;
 }
