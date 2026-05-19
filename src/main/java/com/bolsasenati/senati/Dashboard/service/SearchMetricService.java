@@ -1,6 +1,6 @@
-package com.bolsasenati.senati.dashboard.service;
+package com.bolsasenati.senati.Dashboard.service;
 
-import com.bolsasenati.senati.dashboard.model.SearchMetric;
+import com.bolsasenati.senati.Dashboard.model.SearchMetric;
 import java.util.List;
 import java.util.Map;
 
